@@ -26,7 +26,7 @@ html {
 }
 #logo-image{
     background: url(../img/hero-page-logo.png) no-repeat fixed center;
-    background-size: 50%;
+    background-size: 40%;
 }
 
 
@@ -73,15 +73,53 @@ section{
 
     max-width: 80%;
     width: 100%;
+
 }
 #resume-bio-container a{
     display: flex;
     flex-direction: column;
 
     margin: 5%;
-    max-width: 50%;
+    max-width: 30%;
+    width: 100%;
+
+    text-decoration: none;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    height: 20rem;
+    border: solid black 0.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+#resume-bio-container a:hover{
+    border: solid yellow 0.5rem;
+    
+}
+#resume-bio-container a h3{
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+    color: black;
+
+    background-color: gray;
 }
 
+#resume-alink{
+    background-image: url(../img/alink-images/resume-alink.png);
+}
+#bio-alink{
+    background-image: url(../img/alink-images/bio-alink.png);
+}
+#resume-alink:hover{
+    background-image: url(../img/alink-images/resume-alink-hover.png);
+}
+#bio-alink:hover{
+    background-image: url(../img/alink-images/bio-alink-hover.png);
+}
 
 /* PROJECTS SECTION */
 #projects-section{
