@@ -33,6 +33,13 @@ html {
     width: 100%;
 }
 
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
 #logo-container{
     padding: 3rem 1rem;
 
@@ -49,7 +56,33 @@ html {
 }
 
 
+/* #resume-bio-container{
+    display: flex;
+    flex-direction: column;
+} */
+.hero-page-alinks{
+    max-width: 100%;
+    width: 100%;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    text-align: center;
+    height: 5rem;
+}
+
+#resume-alink{
+    background-image: url(../img/alink-images/resume-alink.png);
+    background-size: cover;
+    background-position: center;
+}
+#bio-alink{
+    background-image: url(../img/alink-images/resume-alink.png);
+}
+#blog-alink{
+    background-image: url(../img/alink-images/resume-alink.png);
+}
 
 
 /* Class for making YouTube/Vimeo videos responsive */
