@@ -18,7 +18,7 @@ html {
 	font-size: 1em;
     line-height: 1.4em;
 }
-
+ 
 .container{
     background-image: url(../img/hero-page-background.png);
     background-size: cover;
@@ -32,136 +32,23 @@ html {
     max-width: 100%;
     width: 100%;
 }
-#logo-image{
-    background: url(../img/hero-page-logo.png) no-repeat fixed center;
-    background-size: 80%;
-}
 
-
-
-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: transparent;
-
-    margin: 10vh auto;
-}
-
-/* HERO SECTION */
-#hero-section{
-}
-#hero-section img{
-    max-width: 50%;
-}
-#hero-section h2{
-    font-size: 2rem;
-    text-align: center;
-
-    background-color: whitesmoke;
-
-    border-style: solid;
-    border-width: 1rem;
-    border-color: gray;
-
-    padding: 2em;
-    margin: 0;
-    max-width: 50%;
-    width: 100%;
-}
-
-/* INTRO SECTION */
-#intro-section{
-    gap: 5vh;
-
-    height: 90vh;
-
-    max-width: 80%;
-    width: 100%;
-}
-.hero-page-alinks{
-    text-decoration: none;
-
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    
-
-    border: solid black 0.25rem;
+#logo-container{
+    padding: 3rem 1rem;
 
     display: flex;
     flex-direction: column;
-    justify-content: end;
-
-    transition: 1s;
+    justify-content: center;
 }
-.hero-page-alinks:hover{
-    border: solid white 0.25rem;
-    transition: 1s;
+#logo-container img{
+    max-width: 100%;
 }
-.hero-page-alinks h3{
-    margin: 0;
-    padding: 1rem;
-
-    opacity: 0;
-    background-color: gray;
-    color: whitesmoke;
-
+#logo-container h2{
     text-align: center;
-    font-family: var(--subtitle-font);
-    font-size: 2rem;
-
-    transition: 1s;
-}
-.hero-page-alinks:hover h3{
-    text-shadow: 0px 0px 10px white;
-    opacity: 100%;
-    transition: 1s;
-}
-#resume-bio-container{
-    /* background-color: red; */
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-    width: 100%;
-
-    max-height: 60%;
-    height: 100%;
-}
-#resume-bio-container a{
-    max-width: 30%;
-    width: 100%;
+    color: white;
 }
 
 
-#resume-alink{
-    background-image: url(../img/alink-images/resume-alink.png);
-}
-#bio-alink{
-    background-image: url(../img/alink-images/bio-alink.png);
-}
-#resume-alink:hover{
-    background-image: url(../img/alink-images/resume-alink-hover.png);
-}
-#bio-alink:hover{
-    background-image: url(../img/alink-images/bio-alink-hover.png);
-}
-#blog-alink{
-    background-image: url(../img/alink-images/blog-alink.png);
-
-    width: 100%;
-
-    max-height: 40%;
-    height: 100%;
-}
-#blog-alink:hover{
-    background-image: url(../img/alink-images/blog-alink-hover.png)
-}
-
-/* PROJECTS SECTION */
-#projects-section{
-}
 
 
 
