@@ -4,6 +4,9 @@
 :root{
     /* --subtitle-font: 'Roboto Mono', monospace; */
     --subtitle-font: 'Gwendolyn', cursive;
+    --bio-alink-image-hover: url(../img/alink-images/bio-alink.png);
+    --resume-alink-image-hover: url(../img/alink-images/resume-alink.png);
+    --blog-alink-image-hover: url(../img/alink-images/blog-alink.png);
 }
 
 /* Basic CSS resets -- leveling slight inconsistencies in browsers */
@@ -56,13 +59,14 @@ section{
 }
 
 
-/* #resume-bio-container{
-    display: flex;
-    flex-direction: column;
-} */
+#intro-section{
+    gap: 1rem;
+}
 .hero-page-alinks{
-    max-width: 100%;
+    max-width: 80%;
     width: 100%;
+
+    margin: 0 auto;
 
     display: flex;
     flex-direction: column;
@@ -70,18 +74,30 @@ section{
 
     text-align: center;
     height: 5rem;
+
+    background-size: cover;
+    background-position: center;
+
+    border-radius: 50px;
+
+    color: white;
+    text-decoration: none;
+}
+.hero-page-alinks:hover{
+    max-width: 85%;
+    height: 5.5rem;
+
+
 }
 
 #resume-alink{
-    background-image: url(../img/alink-images/resume-alink.png);
-    background-size: cover;
-    background-position: center;
+    background-image: var(--resume-alink-image);
 }
 #bio-alink{
-    background-image: url(../img/alink-images/resume-alink.png);
+    background-image: var(--bio-alink-image);
 }
 #blog-alink{
-    background-image: url(../img/alink-images/resume-alink.png);
+    background-image: var(--blog-alink-image);
 }
 
 
