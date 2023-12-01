@@ -4,9 +4,9 @@
 :root{
     /* --subtitle-font: 'Roboto Mono', monospace; */
     --subtitle-font: 'Gwendolyn', cursive;
-    --bio-alink-image-hover: url(../img/alink-images/bio-alink.png);
-    --resume-alink-image-hover: url(../img/alink-images/resume-alink.png);
-    --blog-alink-image-hover: url(../img/alink-images/blog-alink.png);
+    --bio-alink-image-hover: url(../img/alink-images/bio-alink-hover.png);
+    --resume-alink-image-hover: url(../img/alink-images/resume-alink-hover.png);
+    --blog-alink-image-hover: url(../img/alink-images/blog-alink-hover.png);
 }
 
 /* Basic CSS resets -- leveling slight inconsistencies in browsers */
@@ -82,24 +82,43 @@ section{
 
     color: white;
     text-decoration: none;
+    border: solid white 0.1rem;
+
+    font-family: var(--subtitle-font);
+    font-size: 2rem;
+    text-shadow: 0rem 0rem 1rem #FFF;
+    /* ^ = y pos, x pos, thickness, color */
 }
+
 .hero-page-alinks:hover{
     max-width: 85%;
     height: 5.5rem;
+    border: solid white 0.2rem;
 
-
+    font-size: 2.5rem;
+    text-shadow: 0rem 0rem 1rem #FFF;
 }
+
 
 #resume-alink{
-    background-image: var(--resume-alink-image);
+    background-image: url(../img/alink-images/resume-alink.png)
 }
 #bio-alink{
-    background-image: var(--bio-alink-image);
+    background-image: url(../img/alink-images/bio-alink.png)
 }
 #blog-alink{
-    background-image: var(--blog-alink-image);
+    background-image: url(../img/alink-images/blog-alink.png)
 }
 
+#resume-alink:hover{
+    background-image: var(--resume-alink-image-hover);
+}
+#bio-alink:hover{
+    background-image: var(--bio-alink-image-hover);
+}
+#blog-alink:hover{
+    background-image: var(--blog-alink-image-hover);
+}
 
 /* Class for making YouTube/Vimeo videos responsive */
 figure.responsive {

@@ -42,7 +42,7 @@
 
         <!-- Links to projects -->
         <section id="projects-section">
-            <h2>Projects</h2>
+            <h2 id="test" onclick="myFunction()">Projects</h2>
 
             <!-- temp project links -->
             <a href="" class="project-alink">
@@ -52,6 +52,14 @@
         </section>
 
     </div>
+
+
+    <script>
+        function myFunction() {
+            document.getSelection().style.color = "red";
+        }
+    </script>
+
 </body>
 
 </html>
