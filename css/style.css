@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gwendolyn:wght@700&display=swap');
 
+
+/* Div Box for tesitng screen sizes */
+#scr-box{ 
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: red;
+    position:fixed;
+}
+
 :root{
     /* --subtitle-font: 'Roboto Mono', monospace; */
     --subtitle-font: 'Gwendolyn', cursive;
@@ -43,12 +52,19 @@ section{
 }
 
 
+/* Logo CSS */
 #logo-container{
     padding: 3rem 1rem;
+
+    /* background-color: red; */
 
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    margin: 0 auto;
+
+    max-width: 75%;
 }
 #logo-container img{
     max-width: 100%;
@@ -58,7 +74,7 @@ section{
     color: white;
 }
 
-
+/* Intro Section CSS */
 #intro-section{
     gap: 1rem;
 }
@@ -158,10 +174,16 @@ You can adjust the min-width numbers below, and add as many new media queries as
 
 /* Minimum width for iPads and tablets.  */
 @media all and (min-width: 481px) {
-	*{
-        background-color: red;
-    }
 	
+	#scr-box{ 
+        background-color: orange;
+    }
+
+    #logo-container{
+        margin: 0 auto;
+    
+        max-width: 50%;
+    }
 	
 	
 } /* closes 481px+ */
@@ -170,10 +192,10 @@ You can adjust the min-width numbers below, and add as many new media queries as
 
 /* Minimum width for laptops. */
 @media all and (min-width: 769px) {
-	*{
-        background-color: blue;
-    }
 	
+	#scr-box{ 
+        background-color: navy;
+    }
 	
 	
 } /* closes 769px+ */
@@ -182,8 +204,9 @@ You can adjust the min-width numbers below, and add as many new media queries as
 
 /* Minimum width for desktop screens. */
 @media all and (min-width: 1024px) {
-	*{
-        background-color: green;
+	
+    #scr-box{ 
+        background-color: bisque;
     }
 	
 	
